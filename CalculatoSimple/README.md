@@ -16,3 +16,6 @@ Credits:
 
 **Make by - Code Spotabarna (codespot)
 [https://github.com/abarna-codespot](https://github.com/abarna-codespot)**
+
+
+**Text edit used - https://stackedit.io/app#**
