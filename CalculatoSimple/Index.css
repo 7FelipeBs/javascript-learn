@@ -1,0 +1,65 @@
+@font-face {
+    font-family: 'Playfair Display';
+    src: url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,500&display=swap");
+}
+body{
+    font-family: 'Playfair Display';
+	background-color: black;
+}
+#container{
+	width: 1000px;
+	height: 550px;
+	background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)), url(bgImg.jpg);
+    margin: 20px auto;	
+
+}
+#calculator{
+
+	width: 320px;
+    height: 520px;
+    background: linear-gradient(to right, #207594 0px, rgb(87, 180, 223) 300px);
+	margin: 0 auto;
+	top: 20px;
+	position: relative;
+	border-radius: 20px;
+    box-shadow: antiquewhite 0px 0px 1px 2px, #229ECC 0px 0px 25px 1px;
+}
+#result{
+	height: 120px;
+}
+#history{
+	text-align: right;
+	height: 20px;
+	margin: 0 20px;
+	padding-top: 20px;
+	font-size: 15px;
+	color: #919191;
+}
+#output{
+	text-align: right;
+	height: 60px;
+	margin: 10px 20px;
+	font-size: 30px;
+}
+#keyboard{
+	height: 400px;
+}
+.operator, .number, .empty{
+	width: 50px;
+	height: 50px;
+    margin: 15px 5px 15px 21px;
+    float: left;
+    border: 0;
+    border-radius: 10px;
+    cursor: pointer;
+
+    color: #096080
+}
+
+.operator:focus, .number:focus, :empty:focus{
+    outline: 0;
+}
+.operator:active, .number:active{
+    
+    box-shadow: rgb(255, 255, 255) 1px 1px 10px 1px;
+}
