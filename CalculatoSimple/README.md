@@ -1,14 +1,18 @@
-Project simple Calculator (Inacabado)
+**Simple Calculator** 
 
-Basically a project to study logic used for create simple calculator with some alterations graphic and some animations.
+Hi, this is project used to study to learn better about syntax JavaScript, *using projects created by other peoples and making alteration code base original.*
 
-Utilizando das seguintes tecnlogias:
+Warning abou it, let's go to talk this project.
 
-JavaScript
-HTML5
-CSS3
+This project is simple calculator for use day in day, whose i go insert animations and alteration new graphic.
 
+**Used technologies:**
 
-ORIGINAL - 
-Credits: https://github.com/abarna-codespot/A-simple-Calculator/blob/master/script.js
-Project make by -  Code Spot (abarna-codespot)
+ - HTML5
+ - CSS3
+ - JavaScript
+
+Credits:
+
+**Make by - Code Spotabarna (codespot)
+[https://github.com/abarna-codespot](https://github.com/abarna-codespot)**
