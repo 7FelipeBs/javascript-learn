@@ -1,0 +1,60 @@
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+#container{
+    width: 640px;
+    height: 480px;
+    border: 1px solid rgb(0, 0, 0);
+    margin: auto;
+}
+
+#convertBinary, #resultBinary, #title{
+    width: 50%;
+    margin: 1em auto;
+}
+
+#formBinary{
+    margin: 1em;
+}
+.binLabel{
+    display: block;
+
+}
+
+.binInput{
+    margin-left: 1em;
+    margin: 0.5em;
+    padding: 0.5em;
+    border-radius: 7px;
+    border: black 1px solid;
+}
+
+.bin{
+    font-size: 18px;
+}
+
+#buttonIcon{
+    border: 1px solid black;
+    display: inline-block;
+    padding: .2em;
+    border-radius: 8px;
+    
+}
+
+#buttonIcon button{
+    padding: .5em;
+    border-radius: 7px;
+    border: 1px solid transparent;
+}
+
+.icon-spinner11{
+    width: 5em;
+    height: 5em;  
+}
+
+#resultBinary{
+
+}
