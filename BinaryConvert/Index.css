@@ -2,18 +2,31 @@
 body{
     margin: 0;
     padding: 0;
+    font-family: 'Times New Roman', Times, serif;
+    color: #00ccff;
+    text-shadow: 1px 1px 25px #00ccff;
 }
 
+#title{
+    text-align: center;
+
+}
 #container{
     width: 640px;
     height: 480px;
-    border: 1px solid rgb(0, 0, 0);
-    margin: auto;
+    margin: 1em auto;
+    box-shadow: 0 0 10px 10px #00ccffb7;
+    border-radius: 25px;
+
 }
 
 #convertBinary, #resultBinary, #title{
     width: 50%;
     margin: 1em auto;
+}
+
+.bin{
+    font-size: 18px;
 }
 
 #formBinary{
@@ -29,18 +42,21 @@ body{
     margin: 0.5em;
     padding: 0.5em;
     border-radius: 7px;
-    border: black 1px solid;
+    border: .1em solid rgba(199, 199, 199, 0.63);
+    box-shadow: 0px 0px 10px 2px #00ccff;
 }
 
-.bin{
-    font-size: 18px;
+.binInput:focus{
+    outline: none;
 }
 
 #buttonIcon{
-    border: 1px solid black;
+    border: .1em solid rgba(199, 199, 199, 0.63);
     display: inline-block;
     padding: .2em;
     border-radius: 8px;
+    color: 3008fb3;
+    box-shadow: 0px 0px 10px 2px #00ccff;
     
 }
 
@@ -48,6 +64,13 @@ body{
     padding: .5em;
     border-radius: 7px;
     border: 1px solid transparent;
+    cursor: pointer;
+    color: #00ccff;
+}
+
+#button button:active, button:checked, button:focus{
+    outline: none;
+    border: 0;
 }
 
 .icon-spinner11{
@@ -56,5 +79,20 @@ body{
 }
 
 #resultBinary{
+    border: .1em solid rgba(199, 199, 199, 0.63);
+    border-radius: 25px;
+    height: 25%;
+    box-shadow: 0px 0px 10px 2px #00ccff;
+}
 
+#resultBinary p{
+    margin-top: .5em;
+    margin-left: .5em;
+    margin-bottom: 1.7em;
+}
+
+#result{
+    font-size: 1.5em;
+    margin-left: 1em;
+    font-weight: 200;
 }
