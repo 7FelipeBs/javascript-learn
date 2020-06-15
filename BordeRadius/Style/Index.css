@@ -1,0 +1,35 @@
+body{
+    background: rgb(117, 117, 117);
+    color: white;
+}
+
+#bodyRadiusCustom{
+    margin: auto;
+    width: 32em;
+    height: 27em;
+    background-color: #ddd;
+    box-sizing: border-box;
+}
+
+#topLeftBorder, #bottomLeftBorder, #topRightBorder, #bottomRightBorder{
+    width: 25px;
+    border-radius: 100px;
+}
+
+
+/*Tirar a line em volta das bordas */
+#topLeftBorder{
+    transform: translate(-50px, 2px);
+}
+
+#bottomLeftBorder{
+    transform: translate(-90px, 405px);
+}
+
+#topRightBorder{
+    transform: translate(455px, 2px);
+}
+
+#bottomRightBorder{
+    transform: translate(422px, 406px);
+}
