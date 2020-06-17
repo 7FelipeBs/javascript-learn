@@ -1,6 +1,34 @@
 body{
-    background: rgb(117, 117, 117);
-    color: white;
+    background: linear-gradient(to right, #3700b3, #018786);
+    font-family: 'Times New Roman', Times, serif;
+}
+
+
+#headerBody{
+    width: 50%;
+    margin: auto;
+    text-align: center;
+}
+
+#title{
+    margin: .5em;
+    font-size: 3em;
+    font-weight: 100;
+    color: #03DAC6;
+    text-shadow: -1px 1px 2px #6200EE, -2px 2px 2px #5102c0, -3px 2px 2px #4701a8, -4px 2px 10px #3e0292, -5px 2px 10px #2b0166;
+
+}
+
+#gitProject{
+    margin-bottom: 1.5em;
+}
+#gitProject a{
+    font-size: 1.5em;
+    text-decoration: none;
+    color: #03DAC6;
+    letter-spacing: 2px;
+    text-shadow: -1px 1px 5px #6200EE, -2px 2px 5px #5102c0, -3px 2px 5px #4603a3;
+
 }
 
 #bodyRadiusCustom{
@@ -11,25 +39,106 @@ body{
     box-sizing: border-box;
 }
 
-#topLeftBorder, #bottomLeftBorder, #topRightBorder, #bottomRightBorder{
-    width: 25px;
-    border-radius: 100px;
+#textBorderRadius{
+    
 }
 
+#mainBody p{
+    border-bottom: #008888 1px solid;
+    border-radius: 10px;
+    width: 25%;
+    margin:  2em auto .5em auto;
+    text-align: center;
+    font-size: 1.7em;
+    padding: .7em;
+    background: linear-gradient(to right, #6645b1, #469191);
+    color: #03DAC6;
+    text-shadow: -1px 1px 2px #6200EE, -2px 2px 2px #5102c0, -3px 2px 2px #4701a8, -4px 2px 10px #3e0292, -5px 2px 10px #2b0166;
+}
 
+#copy{
+    display: block;
+    padding:0.4em;
+    margin: auto;
+    cursor: pointer;
+    border: 0;
+    border-radius: 10px;
+    background: linear-gradient(to right, #6645b1, #469191);
+    color: #04d3be;
+    text-shadow: -1px 1px 2px #6200EE, -2px 2px 5px #5102c0, -3px 2px 5px #4701a8, -4px 2px 10px #3e0292, -5px 2px 10px #2b0166;
+    transition-duration: .2s;
+}
+
+#copy:focus, #copy:active{
+    outline: none;
+}
+
+#copy:active{
+    box-shadow: 0px 0px 5px 5px #488282;
+}
+
+#topLeftBorder, #bottomLeftBorder, #topRightBorder, #bottomRightBorder{
+    width: 2.5em;
+    border-radius: 50px;
+    border: 0;
+    text-align: center;
+    transition-duration: 0.2s;
+}
+
+#topLeftBorder:focus, #bottomLeftBorder:focus, #topRightBorder:focus, #bottomRightBorder:focus{
+    outline: none;
+    text-align: center;
+}
+
+#topLeftBorder:focus, #bottomLeftBorder:focus{
+    box-shadow: #6200EE 0px 0px 5px 4px;
+}
+#topRightBorder:focus, #bottomRightBorder:focus{
+    box-shadow: #03DAC6 0px 0px 3px 2px;
+}
 /*Tirar a line em volta das bordas */
+
 #topLeftBorder{
-    transform: translate(-50px, 2px);
+    transform: translate(-60px, 2px);
 }
 
 #bottomLeftBorder{
-    transform: translate(-90px, 405px);
+    transform: translate(-105px, 405px);
 }
 
 #topRightBorder{
-    transform: translate(455px, 2px);
+    transform: translate(450px, 2px);
 }
 
 #bottomRightBorder{
-    transform: translate(422px, 406px);
+    transform: translate(410px, 406px);
+}
+
+
+#footer{
+    position: absolute;
+    bottom: 5px;
+    left: 39%;
+    text-align: center;
+
+    font-size: 1.1em;
+    font-weight: 100;
+    color: #7ccac2;
+    text-shadow: -1px 1px 2px #390088, -2px 2px 2px #300172;
+}
+
+#footerText{
+    display: block;
+
+    width: 100%;
+    margin: auto;
+
+}
+#footerBody a{
+    text-decoration: none;
+    font-size: 1.1em;
+    font-weight: 100;
+    color: #7ccac2;
+    text-shadow: -1px 1px 2px #390088, -2px 2px 2px #300172;
+    
 }
