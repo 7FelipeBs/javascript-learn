@@ -1,4 +1,3 @@
-//Create a system that when user enter some value into any part of border radius, change result instantly at box result inside bottom of page.
 $(document).ready(function(){
     $("#topLeftBorder").on("input", function(){
         $("#resultTopLeft").text($(this).val());
@@ -17,16 +16,28 @@ $(document).ready(function(){
     });
 });
 
-function copyToClipBoard(){
-    var copyBorderRadius = document.getElementById("textBorderRadius");
+function copyToClipBoard(element){
 
-    copyBorderRadius.select();
+    var $temp = $("<input>");
+    $("body").append($temp);
+    $temp.val($(element).text()).select();
     document.execCommand("copy");
+    $temp.remove();
 }
 
+function update(){
+    var topLeft = document.getElementById("topLeftBorder").value;
+    var topRight = document.getElementById("topRightBorder").value;
 
+    var bottomLeft = document.getElementById("bottomLeftBorder").value;
+    var bottomRight = document.getElementById("bottomRightBorder").value;
 
-//Create a system that when user click on copy, he will have stored this value for personal use..
+    if(topLeft == '' || topRight == '' || bottomLeft == '' || bottomRight == ''){
+        return 0;
+    }
+    document.getElementById("imageInternal").style.borderTopLeftRadius = topLeft + '%';
+    document.getElementById("imageInternal").style.borderTopRightRadius = topRight + '%';
 
-
-//When user change value at box borde radius, appareance changed too
+    document.getElementById("imageInternal").style.borderBottomLeftRadius = bottomLeft + '%';
+    document.getElementById("imageInternal").style.borderBottomRightRadius = bottomRight + '%';
+}

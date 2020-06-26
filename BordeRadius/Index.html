@@ -7,7 +7,7 @@
         <link rel="stylesheet" href="Style/normalize.css">
         <link rel="stylesheet" href="Icomoon/style.css">
         <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
-        <script src="Js/Index.js"></script>
+        <script type="text/javascript" src="Js/Index.js"></script>
 
     </head>
 
@@ -15,29 +15,38 @@
         <div id="container">
 
             <header id="headerBody">
-                <h1 id="title">Border Radius Custom</h1>
+                <h1 id="title">Generate Border Radius</h1>
                 <p id="gitProject"><a href="https://github.com/7FelipeBs/javascript-learn/tree/master/BordeRadius" target="_blank"><span class="icon-github"></span> Project Git</a></p>
             </header id="header">
 
             <main id="mainBody">
                 
                 <div id="bodyRadiusCustom">
-                    
-                    <input id="topLeftBorder" type="text">
-                    <input id="bottomLeftBorder" type="text">
-                    <input id="topRightBorder" type="text">
-                    <input id="bottomRightBorder" type="text">
+                    <input id="topLeftBorder" onchange="update()" name="TLB" value="0" min="0" max="100"type="number">
+                    <input id="bottomLeftBorder" onchange="update()"  name="BLB"  value="0" min="0" max="100" type="number">
+
+                    <div id="imgRadius">
+                        <img src="Style/Image/482597-PGZQY9-523.jpg" alt="" id="imageInternal" >
+                    </div id="imgRadius">
+
+                    <input id="topRightBorder"  onchange="update()" name="TRB" value="0" min="0" max="100" type="number">
+                    <input id="bottomRightBorder" onchange="update()" name="BRB" value="0" min="0" max="100" type="number">
                 </div>
                 
                 <div id="textBorderRadius">
-                    <p>border-radius: <span id="resultTopLeft">100</span>% &nbsp<span id="resultBottomLeft">100</span>% &nbsp<span id="resultTopRight">100</span>% &nbsp<span id="resultBottomRight">100</span>%;</p>
-                    <button id="copy" type="button">Copy</button>
+
+                    <p id="copyText">border-radius: <span id="resultTopLeft">0</span>% &nbsp<span id="resultBottomLeft">0</span>% &nbsp<span id="resultTopRight">0</span>% &nbsp<span id="resultBottomRight">0</span>%;</p>
+
+                    <button onclick="copyToClipBoard('#copyText')" id="copy" type="button">Copy</button>
+                    
                 </div>
             </main>
 
             <footer id="footer">
                 <div id="footerBody">
-                    <p id="footerText"><i>Project to create a custom border-radius by <span> <a href="https://github.com/7FelipeBs" target="_blank">FelipeBs</a></span> </i> </p>
+                    <p id="footerText"><i>Project to create a custom border-radius by <span> <a href="https://github.com/7FelipeBs" target="_blank">FelipeBs.</a></span></i> </p>
+
+                    <p id="freepik"><span><a href="https://br.freepik.com/fotos-vetores-gratis/tecnologia"> Image copyright &copy; Freepik</a></span> </p>
                 </div>
             </footer id="footer">
         </div>
