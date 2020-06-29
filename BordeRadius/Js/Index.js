@@ -32,12 +32,9 @@ function update(){
     var bottomLeft = document.getElementById("bottomLeftBorder").value;
     var bottomRight = document.getElementById("bottomRightBorder").value;
 
-    if(topLeft == '' || topRight == '' || bottomLeft == '' || bottomRight == ''){
-        return 0;
-    }
-    document.getElementById("imageInternal").style.borderTopLeftRadius = topLeft + '%';
-    document.getElementById("imageInternal").style.borderTopRightRadius = topRight + '%';
+    document.getElementById("imageInternal").style.borderTopLeftRadius = topLeft + 'px';
+    document.getElementById("imageInternal").style.borderTopRightRadius = topRight + 'px';
 
-    document.getElementById("imageInternal").style.borderBottomLeftRadius = bottomLeft + '%';
-    document.getElementById("imageInternal").style.borderBottomRightRadius = bottomRight + '%';
+    document.getElementById("imageInternal").style.borderBottomLeftRadius = bottomLeft + 'px';
+    document.getElementById("imageInternal").style.borderBottomRightRadius = bottomRight + 'px';
 }
